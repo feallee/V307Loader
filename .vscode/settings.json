@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "*.lds": "linkerscript",
+        "string.h": "c"
+    }
+}
