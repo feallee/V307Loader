@@ -1,7 +1,7 @@
 #ifndef __IAP_H_
 #define __IAP_H_
 
- #define IAP_SIMULATE
+// #define IAP_SIMULATE
 #define IAP_PAGE_SIZE 256
 
 /*

@@ -74,7 +74,7 @@ void iap_update(void)
 
 void iap_jump(void)
 {
-    printf("\nJump to application: %08xH...\n\n", IAP_ADDRESS_APPLICATION);
+    printf("\nJump to application: %08XH...\n\n", IAP_ADDRESS_APPLICATION);
     Delay_Ms(10);
     NVIC_EnableIRQ(Software_IRQn);
     NVIC_SetPendingIRQ(Software_IRQn);
