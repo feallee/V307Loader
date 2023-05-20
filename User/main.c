@@ -1,9 +1,11 @@
 #include "iap.h"
 
-int main(void)
+void main(void)
 {
 	iap_init();
 	iap_update();
 	iap_jump();
-	return 0;
+	while(1)
+	{
+	}
 }

@@ -1,2 +1,10 @@
 -dumpmachine.LST
-obj
+obj/User/main.o
+obj/User/main.o
+obj/V307Loader.bin
+obj/V307Loader.elf
+obj/V307Loader.hex
+obj/V307Loader.lst
+obj/V307Loader.map
+obj/User/iap.o
+obj/User/main.o

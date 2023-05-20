@@ -8,7 +8,7 @@ typedef struct
     uint32_t reserve_version;
 } _settings_type;
 
-static const _settings_type *_settings = (_settings_type *)(FLASH_BASE + IAP_ADDRESS_BOOTLOADER_SETTINGS);
+static const _settings_type * const _settings = (_settings_type *)(FLASH_BASE + IAP_ADDRESS_BOOTLOADER_SETTINGS);
 
 static void write_settings(uint32_t application_version, uint32_t reserve_version)
 {
@@ -29,7 +29,7 @@ void iap_init(void)
     Delay_Init();
     USART_Printf_Init(115200);
 
-    printf("\nThe bootloader for CH32V307. Powered by feallee@hotmail.com.\n");
+    printf("\nThe boot loader for CH32V307. Powered by feallee@hotmail.com.\n");
     printf("%08XH\tBootloader Settings\n", IAP_ADDRESS_BOOTLOADER_SETTINGS);
     printf("%08XH\tApplication\n", IAP_ADDRESS_APPLICATION);
     printf("%08XH\tReserve\n", IAP_ADDRESS_RESERVE);
